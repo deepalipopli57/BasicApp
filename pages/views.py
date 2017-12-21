@@ -15,3 +15,4 @@ class HomePage(TemplateView):
 
 class AboutPage(TemplateView):
     template_name = 'pages/about.html'
+
