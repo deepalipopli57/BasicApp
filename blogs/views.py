@@ -13,4 +13,16 @@ class BlogsView(ListView):
 
 class BlogsPost(ListView):
     model = BlogsModel
-    template_name = 'blogs_post.html'
+    template_name = 'pages/blogs_post.html'
+    context_object_name = 'anything_you_want'
+
+
+class BlogsCreateView(ListView):
+    model = BlogsModel
+    template_name = 'pages/post_new.html'
+    fields = '__all__'
+
+
+class BlogsUpdate(ListView):
+    model = BlogsModel
+    template_name = 'pages/post_edit.html'
